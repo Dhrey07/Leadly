@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --black: hsl(0, 2%, 8%);
+}
+h3{
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #004AAD;
+    padding-bottom: 8px;
+}
+h2{
+    font-weight: 900;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+h4{
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+html {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: var(--black);
+    
+
+}
+
+ul,
+li{
+    list-style: none;
+
+}
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+/*HEADER SECTON*/
+
+header{
+    max-width: 1440px;
+    margin: 3rem auto;
+    width: 90%;
+}
+.nav_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0  auto;
+
+
+}
+
+#nav_btn{
+    display: flex;
+    gap: 3rem;
+
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+.nav-links{
+    display: flex;
+    gap: 0.3rem;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #004AAD;
+    transition: .5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+
+button{
+    color: #FFFFFF;
+    background-color: #004AAD;
+    padding: 0.75rem 2.5rem ;
+    border: none;
+    border-radius: 0.25rem;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 1rem;
+}
+#type{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+ul{
+    align-items: center;
+    justify-content: space-between;
+    flex: 2;
+    max-width: 900px;
+}
+
+
+#reg{
+    max-width: 148px;
+}
+.mobile-nav-toggle{
+    display: none;
+}
+@media (max-width: 1024px){
+    #nav_btn{
+        position: fixed;
+        inset: 0 0 0 30%;
+        z-index: 1000;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em ;
+        background: #ebecec;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+    #type{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    #nav_btn[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        background: url("Images/menu-line.svg") no-repeat;
+        border: 0;
+        width: 3rem;
+        aspect-ratio: 1;
+        top: 3.5rem;
+        right: 2rem;
+        z-index: 9999;
+    }
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background: url("Images/close-fill.svg") no-repeat;
+    }
+}
+
+/* Main */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*Business Section*/
+#section-a{
+    margin: 1rem  auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.business::first-line{
+    color: #0BCFAC;
+    font-weight: 700;
+    font-family: poppins;
+}
+.business h1{
+    font-family: Poppins;
+    font-weight: 900;
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+
+    max-width: 600px;
+}
+.options{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    width: 450px;
+    gap: 30px;
+    padding-bottom: 3rem;
+}
+#business-info{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.info p{
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-family: Poppins;
+    font-size: 0.875rem;
+}
+.image img{
+    max-width: 100%;
+    height: auto;
+    padding: 1rem 0;
+}
+
+/*Section B ...WHO ARE WE?*/
+
+.section-b{
+    background-color: #F1F4FB;
+    margin: 1rem  auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    border-radius: 1.25rem;
+}
+.first{
+    line-height: 1.7;
+    max-width: 197px;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 1.25rem;
+    align-items: center;
+
+}
+#side1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-right: 1.5rem;
+}
+.plus{
+    margin-top: 7rem;
+    box-shadow: 38px 36px 90px #D9E1F4;
+    
+}
+#bold {
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: Poppins;
+}
+#Left{
+    display: flex;
+    padding-block: 8%;
+    
+}
+/*#Left {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 6%;
+    align-items: flex-start;
+    justify-content: end;
+
+}*/
+
+.right{
+    justify-content: center;
+    width: 35%;
+    max-width: 409px;
+    line-height: 2;
+
+}
+.right p{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+
+/* SECTION C PROSPECTTNG / PROSPECTING PLUS / BOOK A CALL & QUALIFIED LEADS */
+
+
+
+.section-c{
+    margin: 1rem  auto;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    line-height: 1.6;
+    flex-flow: row;
+}
+.section-c-left > p:first-of-type{
+    padding-bottom: 40px;
+}
+.section-c-left{
+    max-width: 460px;
+    flex: 1;
+}
+.company-prospect p{
+    color: #4E6269;
+    
+}
+/*.section-c-right{
+   flex: 1;
+   max-width: 500px ;
+   height: auto;
+}*/
+.section-c-right img{
+    max-width: 90%;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem 0;
+}
+#checks{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 12px;
+    
+    
+}
+
+#checks i{
+    color: #004AAD;
+}
+
+/*SECTION D PRICING */
+
+
+.section-d {
+    margin: 1rem auto;
+    background: #F1F4FB;
+    padding: 56px 0 173px 0 ;
+    
+}
+.pricing h3,
+.pricing h2{
+    text-align: center;
+}
+.pricing p{
+    max-width: 555px;
+    color: rgba(24, 16, 89, 0.68);
+    text-align: center;
+    padding-bottom: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+.based h4:not(:last-child){
+    padding: 22px;
+    background-color: #FFFFFF;
+    max-width: 368px;
+    text-align: left;
+    margin: 21px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.customized h3{
+    
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+}
+.customized {
+    max-width: 368px ;
+    color: white;
+    background: #004AAD;
+    border-radius: 6px;
+    padding: 20px 20px 76px 20px;
+    margin: 0 auto;
+}
+.customized p{
+    color: white;
+
+}
+
+/* SECTION  TESTIMONIALS*/
+.section-E{
+
+    margin: 64px auto;
+    align-items: center;
+    
+}
+.E-heading{
+    text-align: center;
+}
+.okra{
+    display: flex;
+    max-width: 522px;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;   
+    box-sizing: border-box;
+    
+}
+.okra p{
+    color: #4E6269;
+}
+.rating{
+    margin-top: 10px;
+    margin-bottom: 2.75rem;
+    
+}
+.section-E img[src*='left-right-button']{ 
+    padding-block: 3rem;
+    max-width: 200px;
+    margin-left: 80%;
+}
+.testimonials{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+/* SECTION F ( CLIENTS AREA) */
+
+.section-F{
+    text-align: center;
+    max-width: 1064px;
+    box-shadow: 0px 34px 68px #D9E1F4;
+    height: 188px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+footer{
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#top{
+    margin-bottom: 22px;
+}
+.leader a,
+.leader p {
+    padding-bottom: 12px;
+    color: #4E6269;
+    max-width: 200px;
+    
+}
+.leader input{
+    padding: 18px;
+    background: #F0F3FA;
+    border: none;
+    
+}
+footer img[src*='telegram']{
+    align-items: center;
+    justify-content: center;
+    
+}
+.leader .mail-section{
+    display: flex;
+}

@@ -31,7 +31,7 @@ h4{
 html {
     font-family: Poppins;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: var(--black);
@@ -102,6 +102,14 @@ button{
 
     font-weight: 700;
     font-size: 1rem;
+}
+button:hover{
+    color: #004AAD;
+    background-color: #FFFFFF;
+    border: 1px solid #004AAD;
+    box-shadow: inset 0 0 0.25em 0 #004AAD,
+    0 0 0.5em 0 #004AAD;
+    transition: 1s;
 }
 #type{
     display: flex;
@@ -187,6 +195,7 @@ main{
     padding-bottom: 2rem;
 
     max-width: 600px;
+
 }
 .options{
     display: grid;
@@ -290,6 +299,7 @@ main{
     justify-content: space-between;
     line-height: 1.6;
     flex-flow: row;
+    margin-bottom: 4rem;
 }
 .section-c-left > p:first-of-type{
     padding-bottom: 40px;
@@ -308,7 +318,7 @@ main{
    height: auto;
 }*/
 .section-c-right img{
-    max-width: 90%;
+    max-width: 99%;
     align-items: flex-end;
     justify-content: center;
     padding: 1rem 0;
@@ -346,6 +356,40 @@ main{
     padding-bottom: 1rem;
     justify-content: center;
     margin: 0 auto;
+}
+.toggle-container{
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 22.5rem;
+    /*transform: translate(-50%, -50%);*/
+    height: 50px;
+}
+.toggle-container .toggle{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 3.5rem;
+    height: 1.5rem;
+    background: #004AAD;
+    border-radius: 1.875rem;
+}
+.toggle-container .toggle .toggle-button{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 1rem;
+    height: 1rem;
+    background: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.toggle-container .toggle.active{
+    background: #7ba0f5;
+}
+.toggle-container .toggle.active .toggle-button{
+    left: 32px;
 }
 .based h4:not(:last-child){
     padding: 22px;
@@ -388,13 +432,17 @@ main{
 }
 .okra{
     display: flex;
-    max-width: 522px;
+    width: 522px;
+    height: 15.375rem;
     align-items: flex-start;
     gap: 8px;
     padding: 1.5rem;
     box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;   
     box-sizing: border-box;
+    border: 1px solid #004AAD;
+    overflow: hidden;
+    cursor: pointer;
     
 }
 .okra p{
@@ -411,10 +459,15 @@ main{
     margin-left: 80%;
 }
 .testimonials{
+    width: 100%;
+    height: auto;
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: left;
     margin-top: 20px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    position: relative;
     
 }
 

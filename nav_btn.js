@@ -12,3 +12,10 @@ navToggle.addEventListener('click', () => {
         navToggle.setAttribute('aria-expanded', false);
     }
 } );
+
+let toggle = document.querySelector(".toggle");
+
+
+function Animatedtoggle(){
+    toggle.classList.toggle("active");
+}

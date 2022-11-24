@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --black: hsl(0, 2%, 8%);
+}
+h3{
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #004AAD;
+    padding-bottom: 8px;
+}
+h2{
+    font-weight: 900;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+h4{
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+html {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: var(--black);
+    
+
+}
+
+ul,
+li{
+    list-style: none;
+
+}
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+/*HEADER SECTON*/
+
+header{
+    max-width: 1440px;
+    margin: 3rem auto;
+    width: 90%;
+}
+.nav_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0  auto;
+
+
+}
+
+#nav_btn{
+    display: flex;
+    gap: 3rem;
+
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+.nav-links{
+    display: flex;
+    gap: 0.3rem;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #004AAD;
+    transition: .5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+
+button{
+    color: #FFFFFF;
+    background-color: #004AAD;
+    padding: 0.75rem 2.5rem ;
+    border: none;
+    border-radius: 0.25rem;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover{
+    color: #004AAD;
+    background-color: #FFFFFF;
+    border: 1px solid #004AAD;
+    /* box-shadow: inset 0 0 0.25em 0 #004AAD,
+    0 0 0.5em 0 #004AAD; */
+    transition: 1s;
+}
+#type{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+ul{
+    align-items: center;
+    justify-content: space-between;
+    flex: 2;
+    max-width: 900px;
+}
+
+
+#reg{
+    max-width: 238px;
+}
+.mobile-nav-toggle{
+    display: none;
+}
+@media (max-width: 1024px){
+    #nav_btn{
+        position: fixed;
+        inset: 0 0 0 30%;
+        z-index: 1000;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em ;
+        background: #ebecec;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+    #type{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    #nav_btn[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        background: url("Images/menu-line.svg") no-repeat;
+        border: 0;
+        width: 3rem;
+        aspect-ratio: 1;
+        top: 3.5rem;
+        right: 2rem;
+        z-index: 9999;
+    }
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background: url("Images/close-fill.svg") no-repeat;
+    }
+}
+
+/* Main */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+hr{
+    width: 100%;
+    border: 0.5px solid #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+/* SECTION C PROSPECTTNG / PROSPECTING PLUS / BOOK A CALL & QUALIFIED LEADS */
+
+#headline h2{
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 62px;
+}
+
+.section-c{
+    margin: 1rem  auto;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    line-height: 1.6;
+    flex-flow: row;
+    margin-bottom: 4rem;
+}
+.last{
+    margin-bottom: 285px;
+}
+.section-c-left > p:first-of-type{
+    padding-bottom: 40px;
+}
+.section-c-left{
+    max-width: 460px;
+    flex: 1;
+}
+.company-prospect p{
+    color: #4E6269;
+    
+}
+/*.section-c-right{
+   flex: 1;
+   max-width: 500px ;
+   height: auto;
+}*/
+.section-c-right img{
+    max-width: 99%;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem 0;
+}
+#checks{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 12px;
+    
+    
+}
+
+#checks i{
+    color: #004AAD;
+}
+
+
+
+/* FOOTER */
+footer{
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#top{
+    margin-bottom: 22px;
+}
+.leader a,
+.leader p {
+    padding-bottom: 12px;
+    color: #4E6269;
+    max-width: 211px;
+    
+}
+.leader input{
+    padding: 18px;
+    background: #F0F3FA;
+    border: none;
+    
+}
+footer img[src*='telegram']{
+    align-items: center;
+    justify-content: center;
+    
+}
+.leader .be-social-section{
+    display: flex;
+    gap: 1rem;
+}

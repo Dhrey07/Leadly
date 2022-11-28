@@ -483,6 +483,7 @@ main{
     display: flex;
     gap: 1rem;
     margin-left: 80%;
+    justify-content: center;
 }
 
 /* SECTION F ( CLIENTS AREA) */

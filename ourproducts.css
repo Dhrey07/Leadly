@@ -75,6 +75,9 @@ header{
     font-weight: 500;
 
 }
+nav a.active{
+    color: #004AAD;
+}
 .nav-links{
     display: flex;
     gap: 0.3rem;

@@ -79,6 +79,7 @@ header{
     display: flex;
     gap: 0.3rem;
 }
+
 li a::after{
     content: '';
     display: block;

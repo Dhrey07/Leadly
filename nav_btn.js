@@ -1,3 +1,16 @@
+// //For Active links//
+// const activePage = window.location.pathname;
+// const navLinks = document.querySelectorAll('nav a').
+// forEach (link => {
+//     if(link.href.includes(`${activepage}`)){
+//         link.classList.add(`active`);
+//     }
+// })
+
+
+
+
+
 const primaryNav = document.querySelector("#nav_btn");
 const navToggle = document.querySelector (".mobile-nav-toggle");
 

@@ -79,6 +79,9 @@ header{
     display: flex;
     gap: 0.3rem;
 }
+nav a.active{
+    color: #004AAD;
+}
 li a::after{
     content: '';
     display: block;

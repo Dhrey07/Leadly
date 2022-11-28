@@ -65,6 +65,9 @@ header{
 
 
 }
+nav a.active{
+    color: #004AAD;
+}
 
 #nav_btn{
     display: flex;

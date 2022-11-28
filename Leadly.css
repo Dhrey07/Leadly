@@ -455,11 +455,11 @@ main{
     margin-bottom: 2.75rem;
     
 }
-.section-E img[src*='left-right-button']{ 
+/* .section-E img[src*='left-right-button']{ 
     padding-block: 3rem;
     max-width: 200px;
     margin-left: 80%;
-}
+} */
 .testimonial{
     margin-block: 1rem;
 }

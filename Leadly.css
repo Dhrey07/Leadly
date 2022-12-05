@@ -14,7 +14,7 @@
 }
 h3{
     font-weight: 700;
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #004AAD;
     padding-bottom: 8px;
 }
@@ -172,17 +172,23 @@ ul{
 main{
     max-width: 1440px;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
 }
 
 /*Business Section*/
 #section-a{
-    margin: 1rem  auto;
+    margin: 11rem  auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
     
 
+}
+#section-a{
+    justify-content: flex-start;
+    
+    
 }
 
 .business::first-line{
@@ -279,12 +285,12 @@ main{
 .right{
     justify-content: center;
     width: 35%;
-    max-width: 409px;
+    max-width: 480px;
     line-height: 2;
 
 }
 .right p{
-    font-size: 14px;
+    font-size: 1.25rem;
     padding-bottom: 20px;
 }
 
@@ -301,13 +307,14 @@ main{
     justify-content: space-between;
     line-height: 1.6;
     flex-flow: row;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
 }
 .section-c-left > p:first-of-type{
     padding-bottom: 40px;
 }
 .section-c-left{
-    max-width: 460px;
+    max-width: 567px;
+    font-size: 1.25rem;
     flex: 1;
 }
 .company-prospect p{

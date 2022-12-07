@@ -195,7 +195,8 @@ hr{
     margin: 1rem  auto;
     display: flex;
     flex: 1;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 3rem;
     line-height: 1.6;
     flex-flow: row;
     margin-bottom: 7rem;

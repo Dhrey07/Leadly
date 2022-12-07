@@ -198,7 +198,7 @@ hr{
     justify-content: space-between;
     line-height: 1.6;
     flex-flow: row;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
 }
 .last{
     margin-bottom: 285px;
@@ -207,7 +207,8 @@ hr{
     padding-bottom: 40px;
 }
 .section-c-left{
-    max-width: 460px;
+    max-width: 650px;
+    font-size: 1.25rem;
     flex: 1;
 }
 .company-prospect p{

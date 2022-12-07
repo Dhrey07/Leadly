@@ -191,18 +191,18 @@ main{
     
 }
 
-.business::first-line{
+/* .business::first-line{
     color: #0BCFAC;
     font-weight: 700;
     font-family: poppins;
-}
+} */
 .business h1{
     font-family: Poppins;
     font-weight: 900;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     padding-bottom: 2rem;
 
-    max-width: 600px;
+    max-width: 800px;
 
 }
 .options{
@@ -219,16 +219,15 @@ main{
     align-items: center;
 }
 .info p{
-    padding-bottom: 8px;
     font-weight: 700;
     font-family: Poppins;
     font-size: 0.875rem;
 }
-.image img{
+/* .image img{
     max-width: 100%;
     height: auto;
     padding: 1rem 0;
-}
+} */
 
 /*Section B ...WHO ARE WE?*/
 
@@ -313,7 +312,7 @@ main{
     padding-bottom: 40px;
 }
 .section-c-left{
-    max-width: 567px;
+    max-width: 650px;
     font-size: 1.25rem;
     flex: 1;
 }
@@ -349,9 +348,11 @@ main{
 
 
 .section-d {
-    margin: 1rem auto;
+    margin-block: auto;
+    margin-bottom: 250px;
     background: #F1F4FB;
     padding: 56px 0 173px 0 ;
+    border-radius: 20px;
     
 }
 .pricing h3,
@@ -430,7 +431,7 @@ main{
 }
 
 /* SECTION  TESTIMONIALS*/
-.section-E{
+/* .section-E{
 
     margin: 64px auto;
     align-items: center;
@@ -491,7 +492,7 @@ main{
     gap: 1rem;
     margin-left: 80%;
     justify-content: center;
-}
+} */
 
 /* SECTION F ( CLIENTS AREA) */
 
@@ -520,7 +521,7 @@ footer{
 .leader p {
     padding-bottom: 12px;
     color: #4E6269;
-    max-width: 211px;
+    max-width: 250px;
     
 }
 .leader input{

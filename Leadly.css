@@ -206,7 +206,7 @@ main{
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
-    width: 450px;
+    width: 500px;
     gap: 30px;
     padding-bottom: 3rem;
 }

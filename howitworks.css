@@ -187,6 +187,36 @@ main > h2{
     margin-block: 64px;
 }
 
+.main-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1.125rem;
+}
+.main-info > p{
+    background-color: #EBF1F9;
+    padding: 0.625rem;
+    font-weight: 600;
+    
+}
+.DC{
+    margin-left: 5%;
+}
+.PD{ 
+    margin-left: 15%;
+}
+.AE{
+    margin-left: 28%;
+}
+.SPP{
+    margin-left: 42%;
+}
+.IE{
+    margin-left: 60%;
+}
+.MR{
+    margin-left: 80%;
+}
 
 /* FOOTER */
 footer{

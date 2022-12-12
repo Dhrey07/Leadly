@@ -220,13 +220,17 @@ main{
     font-family: Poppins;
     font-size: 0.875rem;
 }
-/* .image img{
+.image img{
     max-width: 100%;
     height: auto;
     padding: 1rem 0;
-} */
+}
 
 /*Section B ...WHO ARE WE?*/
+
+.WAW{
+    display: none;
+}
 
 .section-b{
     background-color: #F1F4FB;
@@ -234,12 +238,13 @@ main{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1rem;
     
     border-radius: 1.25rem;
 }
 .first{
     line-height: 1.7;
-    max-width: 197px;
+    max-width: 290px;
     padding: 1.5rem;
     background-color: #FFFFFF;
     border-radius: 1.25rem;
@@ -349,7 +354,7 @@ main{
     margin-block: auto;
     margin-bottom: 180px;
     background: #F1F4FB;
-    padding: 56px 0 173px 0 ;
+    padding: 3.5rem 1rem 10.81rem 1rem;
     border-radius: 20px;
     
 }
@@ -536,4 +541,97 @@ footer img[src*='telegram']{
 .leader .be-social-section{
     display: flex;
     gap: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+    #section-a{
+        margin: 3rem  auto;
+        background: url(/Images/Revenuedrivers.svg) ;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .business > h1{
+        text-align: center;
+        color: #ffffff;
+        font-size: 2rem;
+        
+    }
+    .business{
+        padding: 1rem;
+        background:rgb(0,74,173, .5);
+    }
+    
+    
+    .options, .image{
+        display: none;
+    }
+    #section-a button{
+        display: block;
+        margin: auto;
+        
+    }
+
+    /* Section B */
+
+    /* WHO ARE WE */
+    .WAW{
+        display: contents;
+        text-align: center;
+    }
+    .WAW P{
+        margin-block: 1.5rem;
+    }
+    .WAW button{
+       display: block;
+       margin: auto;
+    }
+
+    .section-b .right{
+        display: none;
+    }
+    #Left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        
+    }
+    #side1{
+        gap: 1rem;
+        padding-right: 0rem;
+    }
+    .plus{
+        margin-top: 0rem;
+        box-shadow: 38px 36px 90px #D9E1F4;
+        
+    }
+    .first{
+        max-width: 290px;
+        
+    }
+    .section-b-left{
+        justify-content: center;
+    }
+
+    /* SECTION C */
+    .section-c {
+        display: none;
+    }
+
+    /* SECTION D */
+    .section-d{
+        padding: 3.5rem 1rem 3.5rem 1rem;
+        
+    }
+    .section-d h2{
+        font-size: 1.625rem;
+    }
+
+   
+
+
 }

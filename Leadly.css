@@ -552,6 +552,10 @@ footer img[src*='telegram']{
         background-repeat: no-repeat;
         background-position: center;
     }
+    #Leadly_logo img{
+        width: 79px;
+        height: 22px;
+    }
 
     .business > h1{
         text-align: center;
@@ -629,6 +633,17 @@ footer img[src*='telegram']{
     }
     .section-d h2{
         font-size: 1.625rem;
+    }
+   
+    .be-social-section a{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .be-social-section{
+        display: flex;
+        flex-direction: column;
+        
     }
 
    

@@ -130,12 +130,18 @@ ul{
     display: none;
 }
 @media (max-width: 1024px){
+
+    #reg{
+        font-size: 0.875rem;
+        max-width: 250px;
+    
+    }
     #nav_btn{
         position: fixed;
-        inset: 0 0 0 30%;
+        inset: 0 0 0 20%;
         z-index: 1000;
         flex-direction: column;
-        padding: min(30vh, 10rem) 2em ;
+        padding: min(10vh, 5rem) 2em ;
         background: #ebecec;
 
         transform: translateX(100%);
@@ -151,14 +157,23 @@ ul{
     }
     .mobile-nav-toggle{
         display: block;
-        position: absolute;
+        /* position: relative; */
         background: url("Images/menu-line.svg") no-repeat;
         border: 0;
-        width: 3rem;
+        width: 1.3125rem;
+        height: 1.3125rem;
         aspect-ratio: 1;
         top: 3.5rem;
-        right: 2rem;
+        right: 0.55rem;
         z-index: 9999;
+        padding: 0rem;
+        background-color: none;
+        border: none;
+
+    }
+    .mobile-nav-toggle:hover{
+        border: none;
+        transition: 0s;
     }
     .mobile-nav-toggle[aria-expanded="true"]{
         background: url("Images/close-fill.svg") no-repeat;
@@ -373,6 +388,7 @@ main{
 .toggle-container{
     margin: 2.5rem auto;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     max-width: 22.5rem;
     /*transform: translate(-50%, -50%);*/
@@ -542,11 +558,13 @@ footer img[src*='telegram']{
     display: flex;
     gap: 1rem;
 }
+.s-handles > p{
+    display: none;
+}
 
 @media screen and (max-width: 650px) {
     #section-a{
         margin: 3rem  auto;
-        background: url(/Images/Revenuedrivers.svg) ;
         width: 100%;
         background-size: contain;
         background-repeat: no-repeat;
@@ -558,25 +576,26 @@ footer img[src*='telegram']{
     }
 
     .business > h1{
-        text-align: center;
-        color: #ffffff;
-        font-size: 2rem;
+        color: #180e0e;
+        font-size: 30px;
         
     }
-    .business{
-        padding: 1rem;
-        background:rgb(0,74,173, .5);
-    }
+    .business::first-line{
+    color: #0BCFAC;
+    font-weight: 700;
+    font-family: poppins;
+}
+
     
     
     .options, .image{
         display: none;
     }
-    #section-a button{
+    /* #section-a button{
         display: block;
         margin: auto;
         
-    }
+    } */
 
     /* Section B */
 
@@ -631,10 +650,13 @@ footer img[src*='telegram']{
         padding: 3.5rem 1rem 3.5rem 1rem;
         
     }
+    .toggle-container{
+        margin: 0.5rem auto;
+    }
     .section-d h2{
         font-size: 1.625rem;
     }
-   
+    /* FOOTER */
     .be-social-section a{
         display: flex;
         align-items: center;
@@ -644,6 +666,17 @@ footer img[src*='telegram']{
         display: flex;
         flex-direction: column;
         
+    }
+    .s-handles > p{
+        display: contents;
+    }
+    img[src*='Leadly']{
+        width: 79px;
+        height: 22px;
+    }
+    .be-social-section img{
+        width: 30px;
+        height: 30px;
     }
 
    

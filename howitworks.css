@@ -136,12 +136,18 @@ ul{
     display: none;
 }
 @media (max-width: 1024px){
+
+    #reg{
+        font-size: 0.875rem;
+        max-width: 250px;
+    
+    }
     #nav_btn{
         position: fixed;
-        inset: 0 0 0 30%;
+        inset: 0 0 0 20%;
         z-index: 1000;
         flex-direction: column;
-        padding: min(30vh, 10rem) 2em ;
+        padding: min(10vh, 5rem) 2em ;
         background: #ebecec;
 
         transform: translateX(100%);
@@ -157,14 +163,23 @@ ul{
     }
     .mobile-nav-toggle{
         display: block;
-        position: absolute;
+        /* position: relative; */
         background: url("Images/menu-line.svg") no-repeat;
         border: 0;
-        width: 3rem;
+        width: 1.3125rem;
+        height: 1.3125rem;
         aspect-ratio: 1;
         top: 3.5rem;
-        right: 2rem;
+        right: 0.55rem;
         z-index: 9999;
+        padding: 0rem;
+        background-color: none;
+        border: none;
+
+    }
+    .mobile-nav-toggle:hover{
+        border: none;
+        transition: 0s;
     }
     .mobile-nav-toggle[aria-expanded="true"]{
         background: url("Images/close-fill.svg") no-repeat;
@@ -198,6 +213,9 @@ main > h2{
     padding: 0.625rem;
     font-weight: 600;
     
+}
+.main-inf{
+    display: none;
 }
 .DC{
     margin-left: 5%;
@@ -242,12 +260,69 @@ footer{
     border: none;
     
 }
-footer img[src*='telegram']{
+/* footer img[src*='telegram']{
     align-items: center;
     justify-content: center;
     
-}
+} */
 .leader .be-social-section{
     display: flex;
     gap: 1rem;
+}
+.s-handles > p{
+    display: none;
+}
+@media screen and (max-width: 650px) {
+    hr{
+        display: none;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 1.625rem;
+        padding-bottom: 0px;
+    }
+    .main-info{
+        display: none;
+    }
+    .main-inf{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-block: 1.125rem;
+        
+    }
+    .main-inf > p{
+        text-align: center;
+        background-color: #EBF1F9;
+        width: 292px;
+        padding: 0.625rem;
+        font-weight: 600;
+        
+    }
+    
+
+
+    /* FOOTER */
+    .be-social-section a{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .be-social-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .s-handles > p{
+        display: contents;
+    }
+    img[src*='Leadly']{
+        width: 79px;
+        height: 22px;
+    }
+    .be-social-section img{
+        width: 30px;
+        height: 30px;
+    }
 }

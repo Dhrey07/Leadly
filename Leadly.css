@@ -470,10 +470,10 @@ main{
     border-radius: 1rem;   
     box-sizing: border-box;
     /* border: 1px solid #004AAD; */
-    overflow: hidden;
+    /* overflow: hidden;
     cursor: pointer;
     
-}
+} */
 .okra p{
     color: #4E6269;
 }

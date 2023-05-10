@@ -9,6 +9,11 @@
     box-sizing: inherit;
 }
 
+#Leadly_logo img{
+    width: 79px;
+    height: 79px;
+}
+
 :root{
     --black: hsl(0, 2%, 8%);
 }
@@ -22,7 +27,15 @@ h2{
     font-weight: 900;
     font-size: 2rem;
     padding-bottom: 20px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 84px;
+text-align: left;
 }
+
+
 h4{
     font-weight: 700;
     font-size: 0.875rem;
@@ -53,8 +66,8 @@ a {
 /*HEADER SECTON*/
 
 header{
-    max-width: 1440px;
-    margin: 3rem auto;
+    /* max-width: 1440px; */
+    margin: 1.5rem auto;
     width: 90%;
 }
 .nav_items{
@@ -184,13 +197,46 @@ ul{
     .mobile-nav-toggle[aria-expanded="true"]{
         background: url("Images/close-fill.svg") no-repeat;
     }
+    .wbackground{
+        background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+        background-size: cover;
+     
+    }
+    
+    
+    
+    .cont{
+        max-width: 40rem;
+        margin: 4rem auto ;
+        padding-top: 3rem;
+    }
+    
+    .cont p {
+        margin-top: 0.2rem;
+    font-size: 12px;
+    line-height: 33px;
+
+    margin-bottom: 2rem;
+    }
+    
+    .cont h1{
+    font-size: 26px;
+    line-height: 44px;
+    width: 24rem;
+    margin-bottom: 2rem;
+    }
+    
+    .cont button{
+            padding: 1.25rem 1.5rem ;
+           
+        }
 }
 
 /* Main */
 main{
-    max-width: 1440px;
+    
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
 hr{
     width: 100%;
@@ -198,20 +244,150 @@ hr{
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 .company-prospect{
-    text-align: center;
+    max-width: 1440px;
+    padding-inline: 3%;
+    text-align: left;
     margin: 4rem auto;
-    max-width: 746px;
-    margin-bottom: 302px;
-    
-    
+    /* max-width: 746px; */
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
+.company-prospect p{
+    max-width: 746px;
+}
+
+
+.bac1{
+    position: absolute;
+    top: 15rem;
+    right: 15rem;
+    width: 454px;
+    z-index: -1;
+}
+.bac2{
+    position: absolute;
+    top: 28rem;
+    right: 20rem;
+    width: 280px;
+    background-color: white;
+    padding: 4rem;
+    z-index: -1;
+}
+
+.wbackground{
+    background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+    padding-block: 2rem;
+    /* height: 50vh;
+    padding: 0 3rem; */
+ 
+}
+
+
+
+.cont{
+    max-width: 80rem;
+    margin: 4rem auto ;
+    padding-block: 3rem;
+}
+
+.cont p {
+    margin-top: 1rem;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+color: #FFDC60;
+margin-bottom: 2rem;
+}
+
+.cont h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 84px;
+width: 48rem;
+
+color: #FFFFFF;
+margin-bottom: 2rem;
+}
+
+.cont button{
+
+        color: #004AAD;
+        background-color: #ffffff;
+        padding: 1.75rem 2.5rem ;
+        border: none;
+        border-radius: 0.25rem;
+        justify-content: center;
+        align-items: center;
+
+    
+    
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .cont button:hover{
+        color: #004AAD;
+        background-color: #004AAD;
+        border: 1px solid #ffffff;
+        /* box-shadow: inset 0 0 0.25em 0 #004AAD,
+        0 0 0.5em 0 #004AAD; */
+        transition: 1s;
+    }
 .company-prospect > p{
     padding-bottom: 1.5rem;
     font-size: 1.25rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: left;
+}
+.leadly-more{
+    background-color: #ebecec;
+}
+.leadly-extras{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-inline: 3%;
+    padding-block: 5rem;
+    gap: 1rem;
+    
+}
+.leadly-extra{
+    max-width: 350px;
+    justify-items: flex-start;
+}
+.leadly-extra *{
+    margin-bottom: 1.2rem;
+}
+.leadly-extra a{
+    display: flex;
+    align-items: center;
+    color: #004AAD;
+    gap: 5px;
+}
+.leadly-extra h3{
+    font-size: 18px;
 }
 
 /* FOOTER */
 footer{
+    /* padding: 8rem 8rem; */
+    padding-inline: 2%;
+    max-width: 1440px;
     margin: 4rem auto;
     display: flex;
     justify-content: space-between;
@@ -220,6 +396,9 @@ footer{
 }
 #top{
     margin-bottom: 22px;
+        width: 79px;
+        height: 79px;
+    
 }
 .leader a,
 .leader p {
@@ -247,6 +426,71 @@ footer img[src*='telegram']{
     display: none;
 }
 
+
+
+@media (max-width: 1024px){
+    .company-prospect{
+        margin: 2rem auto;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .wbackground{
+        background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+        padding-block: 2rem;
+        /* background-size: cover;
+        height: 35vh; */
+     
+    }
+    
+    
+    
+    .cont{
+        max-width: 40rem;
+        margin: 4rem auto ;
+        padding-top: 3rem;
+    }
+    
+    .cont p {
+        margin-top: 0.2rem;
+        font-size: 12px;
+        line-height: 33px;
+
+        margin-bottom: 2rem;
+    }
+    
+    .cont h1{
+    font-size: 26px;
+    line-height: 44px;
+    width: 24rem;
+    margin-bottom: 2rem;
+    }
+    
+    .cont button{
+            padding: 1.25rem 1.5rem ;
+           
+        }
+
+        footer{
+            padding: 2.5rem;
+        }
+        .bac1{
+            position: absolute;
+            top: 35rem;
+            right: 15rem;
+            width: 254px;
+            z-index: -1;
+        }
+        .bac2{
+            position: absolute;
+            top: 42rem;
+            right: 15rem;
+            width: 180px;
+            background-color: white;
+            padding: 4rem;
+            z-index: -1;
+        }
+}
 @media screen and (max-width: 650px) {
     hr{
         display: none;
@@ -256,6 +500,7 @@ footer img[src*='telegram']{
     }
     .company-prospect > p{
         font-size: 1.125rem;
+        text-align: justify;
     }
     .company-prospect{
         margin: 2rem auto;
@@ -280,10 +525,59 @@ footer img[src*='telegram']{
     }
     img[src*='Leadly']{
         width: 79px;
-        height: 22px;
+        height: 79px;
     }
     .be-social-section img{
         width: 30px;
         height: 30px;
     }
+    
+    .wbackground{
+        background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+        /* background-size: cover;
+        height: 40vh; */
+     padding-block: 2rem;
+    }
+    
+    
+    
+    .cont{
+        width: 20rem;
+        margin:  auto ;
+    }
+    
+    .cont p {
+        margin-top: 0.2rem;
+        font-size: 12px;
+        line-height: 33px;
+
+        margin-bottom: 2rem;
+    }
+    
+    .cont h1{
+    font-size: 20px;
+    line-height: 44px;
+    width: 14rem;
+    margin-bottom: 1rem;
+    }
+    
+    .cont button{
+            padding: 0.35rem 0.35rem ;
+            font-size: 4px;
+           
+        }
+ 
+        footer{
+            padding: 0.1rem 3rem;
+            display: block;
+            margin: 2rem auto;
+            width: 100%;
+            padding: auto;
+        }
+        .bac1{
+           display: none;
+        }
+        .bac2{
+          display: none;
+        }
 }

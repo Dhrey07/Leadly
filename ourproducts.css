@@ -12,12 +12,20 @@
 :root{
     --black: hsl(0, 2%, 8%);
 }
+#headline{
+    text-align: center;
+}
 h3{
     font-weight: 700;
     font-size: 0.875rem;
     color: #004AAD;
     padding-bottom: 8px;
 }
+#Leadly_logo img{
+    width: 79px;
+    height: 79px;
+}
+
 h2{
     font-weight: 900;
     font-size: 2rem;
@@ -200,13 +208,22 @@ hr{
 }
 /* SECTION C PROSPECTTNG / PROSPECTING PLUS / BOOK A CALL & QUALIFIED LEADS */
 
-#headline h2{
-    text-align: center;
-    margin-top: 42px;
-    margin-bottom: 62px;
-}
 
+.wha{
+    text-align: center;
+    margin-block: 40px;
+    font-size: 2rem;
+}
+.section-c-{
+    position: relative;
+    /* background-image: url(Images/str.svg); */
+}
+img[src*=str]{
+    position: absolute;
+    width: 100%;
+}
 .section-c{
+    
     margin: 1rem  auto;
     display: flex;
     flex: 1;
@@ -215,9 +232,17 @@ hr{
     line-height: 1.6;
     flex-flow: row;
     margin-bottom: 7rem;
+
+    max-width: 1440px;
+    width: 90%;
 }
-.last{
-    margin-bottom: 285px;
+
+.section-c h3{
+    color: #FFDC60;
+}
+
+.section-c h2{
+    color: #004AAD;
 }
 .section-c-left > p:first-of-type{
     padding-bottom: 40px;
@@ -239,7 +264,7 @@ hr{
 .section-c-right img{
     max-width: 99%;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1rem 0;
 }
 #checks{
@@ -254,19 +279,92 @@ hr{
 #checks i{
     color: #004AAD;
 }
+.wbackground{
+    background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+    padding-block: 2rem;
+    /* background-size: cover;
+    height: 50vh;
+    padding: 0 2rem; */
+ 
+}
+
+
+
+.cont{
+    max-width: 60rem;
+    margin: 4rem auto ;
+    /* padding-top: 3rem; */
+}
+
+.cont p {
+margin-top: 1rem;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+color: #FFDC60;
+margin-bottom: 2rem;
+}
+
+.cont h1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 84px;
+max-width: 48rem;
+
+color: #FFFFFF;
+margin-bottom: 2rem;
+}
+
+.cont button{
+
+        color: #004AAD;
+        background-color: #ffffff;
+        padding: 1.75rem 2.5rem ;
+        border: none;
+        border-radius: 0.25rem;
+        justify-content: center;
+        align-items: center;
+
+    
+    
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .cont button:hover{
+        color: #004AAD;
+        background-color: #004AAD;
+        border: 1px solid #ffffff;
+        /* box-shadow: inset 0 0 0.25em 0 #004AAD,
+        0 0 0.5em 0 #004AAD; */
+        transition: 1s;
+    }
 
 
 
 /* FOOTER */
 footer{
+    padding: 8rem 8rem;
     margin: 4rem auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
+    max-width: 1440px;
 }
 #top{
     margin-bottom: 22px;
+        width: 79px;
+        height: 79px;
+    
 }
 .leader a,
 .leader p {
@@ -293,6 +391,50 @@ footer{
 .s-handles > p{
     display: none;
 }
+
+
+@media (max-width: 1024px){
+
+    .wbackground{
+        background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+        /* background-size: cover;
+        height: 35vh; */
+     
+    }
+    
+
+    
+    .cont{
+        max-width: 40rem;
+        margin: 4rem auto ;
+        padding-top: 3rem;
+    }
+    
+    .cont p {
+        margin-top: 0.2rem;
+    font-size: 12px;
+    line-height: 33px;
+
+    margin-bottom: 2rem;
+    }
+    
+    .cont h1{
+    font-size: 26px;
+    line-height: 44px;
+    max-width: 24rem;
+    margin-bottom: 2rem;
+    }
+    
+    .cont button{
+            padding: 1.25rem 1.5rem ;
+           
+        }
+
+        footer{
+            padding: 2.5rem;
+        }
+}
+
 
 @media screen and (max-width: 650px) {
     hr{
@@ -331,11 +473,56 @@ footer{
         display: contents;
     }
     img[src*='Leadly']{
-        width: 79px;
-        height: 22px;
+        width: 30px;
+        height: 30px;
     }
     .be-social-section img{
         width: 30px;
         height: 30px;
     }
+    .wbackground{
+        background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+        /* background-size: cover;
+        height: 40vh; */
+     
+    }
+    
+    
+    
+    .cont{
+        max-width: 20rem;
+        margin: 1rem auto ;
+        padding-block: 3rem;
+        padding-inline: 1rem;
+    }
+    
+    .cont p {
+    /* margin-top: 0.2rem; */
+    font-size: 12px;
+    /* line-height: 33px;
+
+    margin-bottom: 2rem; */
+    }
+    
+    .cont h1{
+    font-size: 20px;
+    line-height: 44px;
+    max-width: 14rem;
+    /* margin-bottom: 1rem; */
+    }
+    
+    .cont button{
+            padding: 0.85rem;
+            font-size: 4px;
+           
+        }
+
+        
+        footer{
+            padding: 0.1rem 3rem;
+            display: block;
+            margin: 2rem auto;
+            width: 100%;
+            padding: auto;
+        }
 }

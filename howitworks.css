@@ -18,10 +18,17 @@ h3{
     color: #004AAD;
     padding-bottom: 8px;
 }
+#Leadly_logo img{
+    width: 79px;
+    height: 79px;
+}
+
 h2{
     font-weight: 900;
     font-size: 2rem;
     padding-bottom: 20px;
+    font-family: 'Poppins';
+
 }
 h4{
     font-weight: 700;
@@ -53,7 +60,7 @@ a {
 /*HEADER SECTON*/
 
 header{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 3rem auto;
     width: 90%;
 }
@@ -187,10 +194,57 @@ ul{
 }
 
 /* Main */
+
+/* ANIMATION */
+
+iframe {
+    width: 100%;
+    margin-right: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+.move{
+    position: absolute;
+    z-index: -1;
+    right: 10%;
+}
+.move h1 {
+    font-family: 'Poppins';
+    font-size: 2.3rem;
+    margin-top: 3em;
+    margin-bottom: .3em;
+    color: #004AAD;
+}
+
+.move p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.move h1,
+.move p {
+    text-align: right;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+@media (max-width: 1220px) {
+    .move{
+        display: none;
+    }
+    iframe{
+        display: none;
+    }
+    
+}
 main{
     max-width: 1440px;
     margin: 0 auto;
     width: 90%;
+    /* position: relative; */
+    z-index: 99;
+   
 }
 hr{
     width: 100%;
@@ -200,24 +254,32 @@ hr{
 main > h2{
     text-align: center;
     margin-block: 64px;
+    font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 84px;
+text-align: left;
+margin-left: 4rem;
 }
 
 .main-info{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
     margin-block: 1.125rem;
 }
 .main-info > p{
     background-color: #EBF1F9;
-    padding: 0.625rem;
+    padding: 1.625rem;
+    padding-bottom: 3.5rem;
+    width: 600px;
     font-weight: 600;
     
 }
 .main-inf{
     display: none;
 }
-.DC{
+/* .DC{
     margin-left: 5%;
 }
 .PD{ 
@@ -232,12 +294,99 @@ main > h2{
 .IE{
     margin-left: 60%;
 }
+*/
 .MR{
-    margin-left: 80%;
+     margin-bottom: 8rem;
+} 
+
+.wbackground{
+    background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+    padding: 2rem;
+    /* background-size: cover;
+    height: 50vh;
+    margin-bottom: 8rem; */
+ 
+}
+
+
+
+.cont{
+    margin: 4rem 19rem ;
+    padding-top: 3rem;
+}
+
+.cont p {
+    margin-top: 1rem;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+color: #FFDC60;
+margin-bottom: 2rem;
+}
+
+.cont h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 84px;
+width: 48rem;
+
+color: #FFFFFF;
+margin-bottom: 2rem;
+}
+.inbox{
+    position: relative;
+    top: 01.3rem;
+    width: 64px;
+    margin: 0.2rem  1.4rem;
+    margin-bottom: 0rem;
+}
+.cont button{
+
+        color: #004AAD;
+        background-color: #ffffff;
+        padding: 1.75rem 2.5rem ;
+        border: none;
+        border-radius: 0.25rem;
+        justify-content: center;
+        align-items: center;
+
+    
+    
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .cont button:hover{
+        color: #004AAD;
+        background-color: #004AAD;
+        border: 1px solid #ffffff;
+        /* box-shadow: inset 0 0 0.25em 0 #004AAD,
+        0 0 0.5em 0 #004AAD; */
+        transition: 1s;
+    }
+.company-prospect > p{
+    padding-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 48px;
+text-align: left;
 }
 
 /* FOOTER */
 footer{
+    padding: 8rem 8rem;
+    max-width: 1440px;
     margin: 4rem auto;
     display: flex;
     justify-content: space-between;
@@ -246,6 +395,9 @@ footer{
 }
 #top{
     margin-bottom: 22px;
+        width: 79px;
+        height: 79px;
+    
 }
 .leader a,
 .leader p {
@@ -272,6 +424,92 @@ footer{
 .s-handles > p{
     display: none;
 }
+
+@media (max-width: 1024px){
+
+    #reg{
+        font-size: 0.875rem;
+        max-width: 250px;
+    
+    }
+    #nav_btn{
+        position: fixed;
+        inset: 0 0 0 20%;
+        z-index: 1000;
+        flex-direction: column;
+        padding: min(10vh, 5rem) 2em ;
+        background: #ebecec;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+    #type{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    #nav_btn[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .mobile-nav-toggle{
+        display: block;
+        /* position: relative; */
+        background: url("Images/menu-line.svg") no-repeat;
+        border: 0;
+        width: 1.3125rem;
+        height: 1.3125rem;
+        aspect-ratio: 1;
+        top: 3.5rem;
+        right: 0.55rem;
+        z-index: 9999;
+        padding: 0rem;
+        background-color: none;
+        border: none;
+
+    }
+    .mobile-nav-toggle:hover{
+        border: none;
+        transition: 0s;
+    }
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background: url("Images/close-fill.svg") no-repeat;
+    }
+    .wbackground{
+        background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+        background-size: cover;
+     
+    }
+    
+    
+    
+    .cont{
+        width: 40rem;
+        margin: 4rem auto ;
+        padding-top: 3rem;
+    }
+    
+    .cont p {
+        margin-top: 0.2rem;
+    font-size: 12px;
+    line-height: 33px;
+
+    margin-bottom: 2rem;
+    }
+    
+    .cont h1{
+    font-size: 26px;
+    line-height: 44px;
+    width: 24rem;
+    margin-bottom: 2rem;
+    }
+    
+    .cont button{
+            padding: 1.25rem 1.5rem ;
+           
+        }
+}
+
+
 @media screen and (max-width: 650px) {
     hr{
         display: none;
@@ -280,6 +518,10 @@ footer{
         font-weight: 600;
         font-size: 1.625rem;
         padding-bottom: 0px;
+    }
+    main{
+        margin-bottom: 5rem;
+        
     }
     .main-info{
         display: none;
@@ -290,17 +532,29 @@ footer{
         align-items: center;
         gap: 1rem;
         margin-block: 1.125rem;
-        
+       
     }
     .main-inf > p{
-        text-align: center;
+        text-align: left;
         background-color: #EBF1F9;
         width: 292px;
-        padding: 0.625rem;
+        padding: 0  0.11rem;
         font-weight: 600;
+        font-size: 10px;
+        padding-bottom: 2rem;
         
     }
     
+    main > h2{
+        text-align: center;
+        margin-block: 4px;
+        font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 84px;
+    text-align: left;
+    margin-left: 2rem;
+    }
 
 
     /* FOOTER */
@@ -325,4 +579,64 @@ footer{
         width: 30px;
         height: 30px;
     }
+
+    .wbackground{
+        background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+        background-size: cover;
+        padding-block: 2rem;
+    }
+    
+    
+    
+    .cont{
+        width: 20rem;
+        margin: auto ;
+    }
+    
+    .cont p {
+        margin-top: 0.2rem;
+    font-size: 12px;
+    line-height: 33px;
+
+    margin-bottom: 2rem;
+    }
+    
+    .cont h1{
+    font-size: 20px;
+    line-height: 44px;
+    width: 14rem;
+    margin-bottom: 1rem;
+    }
+    
+    .cont button{
+            padding: 0.35rem 0.35rem ;
+            font-size: 4px;
+           
+        }
+
+        footer{
+            padding: 0.1rem 3rem;
+            display: block;
+            margin: 2rem auto;
+            width: 100%;
+            padding: auto;
+        }
+
+        .inbox{
+            text-align: left;
+            position: relative;
+            top: 01.3rem;
+            width: 34px;
+            margin: 0.9rem  1.9rem;
+            margin-bottom: 0rem;
+        }
+
+        .main-info > p{
+            background-color: #EBF1F9;
+            padding: 1.625rem;
+            padding-bottom: 1.5rem;
+            width: 600px;
+            font-weight: 600;
+            
+        }
 }

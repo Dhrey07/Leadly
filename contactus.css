@@ -12,6 +12,23 @@
 :root{
     --black: hsl(0, 2%, 8%);
 }
+h1{
+    text-align: left;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 33px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+color: #0064E9;
+}
+#Leadly_logo img{
+    width: 79px;
+    height: 79px;
+}
 h3{
     font-weight: 700;
     font-size: 0.875rem;
@@ -98,7 +115,7 @@ li a:hover::after{
 button{
     color: #FFFFFF;
     background-color: #004AAD;
-    padding: 0.75rem 2.5rem ;
+    padding: 1.35rem 2.5rem ;
     border: none;
     border-radius: 0.25rem;
     justify-content: center;
@@ -184,6 +201,7 @@ ul{
     .mobile-nav-toggle[aria-expanded="true"]{
         background: url("Images/close-fill.svg") no-repeat;
     }
+
 }
 
 /* Main */
@@ -197,30 +215,123 @@ hr{
     border: 0.5px solid #FFFFFF;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
+
+.wbackground{
+    background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+    background-size: cover;
+    padding-block: 2rem;
+}
+
+
+
+.cont{
+    width: 60rem;
+    margin: 4rem auto ;
+    padding-top: 3rem;
+}
+
+.cont p {
+    margin-top: 1rem;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+color: #FFDC60;
+margin-bottom: 2rem;
+}
+
+.cont h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 84px;
+width: 48rem;
+
+color: #FFFFFF;
+margin-bottom: 2rem;
+}
+
+.cont button{
+
+        color: #004AAD;
+        background-color: #ffffff;
+        padding: 1.75rem 2.5rem ;
+        border: none;
+        border-radius: 0.25rem;
+        justify-content: center;
+        align-items: center;
+
+    
+    
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .cont button:hover{
+        color: #004AAD;
+        background-color: #004AAD;
+        border: 1px solid #ffffff;
+        /* box-shadow: inset 0 0 0.25em 0 #004AAD,
+        0 0 0.5em 0 #004AAD; */
+        transition: 1s;
+    }
+
 .company-prospect{
     
-    margin: 4rem auto;
+    margin: 4rem auto 0;
     width: 100%;
     background: #F1F4FB;
     border-radius: 20px;
     padding-block: 100px;
-    margin-bottom: 302px;
-    
     
 }
 .flex{
     
     display: flex;
-    align-items: center;
-    justify-content: center;
+     padding-left: 4rem;
     gap: 0.5rem;
     margin-bottom: 2.875rem;
 }
-a{
-    font-size: 0.875rem;
-    color: #4E6269;
+.flex a{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 59px;
+width: 60rem;
+text-align: left;
+line-height: 84px;
+
+color: #000000;
+
+
 
 }
+
+
+.o{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 84px;
+    color: #FFDC60;
+}
+
+.s{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 84px;
+    color: #0064E9;
+}
+
 .company-prospect > p{
     padding-bottom: 1.5rem;
     font-size: 0.875rem;
@@ -228,6 +339,7 @@ a{
 
 /* FOOTER */
 footer{
+    padding: 4rem 8rem;
     margin: 4rem auto;
     display: flex;
     justify-content: space-between;
@@ -236,6 +348,8 @@ footer{
 }
 #top{
     margin-bottom: 22px;
+        width: 79px;
+        height: 79px;
 }
 .leader a,
 .leader p {
@@ -259,3 +373,202 @@ footer img[src*='telegram']{
     display: flex;
     gap: 1rem;
 }
+
+@media (max-width: 1024px){
+    .flex a{
+        width: 600px;
+        line-height: 50px;
+        font-size: 36px;
+    }
+    .o{
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+        color: #FFDC60;
+    }
+    
+    .s{
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 34px;
+        color: #0064E9;
+    }
+
+    .flex{
+    
+        display: flex;
+        padding-left: 0;
+         padding: 0 1.3rem;
+        gap: 0.5rem;
+        margin-bottom: 2.875rem;
+    }
+    .wbackground{
+        background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+        background-size: cover;
+        padding-block: 3rem;
+     
+    }
+    
+    
+    
+    .cont{
+        width: 40rem;
+        margin: auto ;
+    
+    }
+    
+    .cont p {
+        margin-top: 0.2rem;
+    font-size: 12px;
+    line-height: 33px;
+
+    margin-bottom: 2rem;
+    }
+    
+    .cont h1{
+    font-size: 26px;
+    line-height: 44px;
+    width: 24rem;
+    margin-bottom: 2rem;
+    }
+    
+    .cont button{
+            padding: 1.25rem 1.5rem ;
+           
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        hr{
+            display: none;
+        }
+        h2{
+            font-weight: 600;
+            font-size: 1.625rem;
+            padding-bottom: 0px;
+        }
+        main{
+            margin-bottom: 5rem;
+            
+        }
+        .main-info{
+            display: none;
+        }
+        .main-inf{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-block: 1.125rem;
+           
+        }
+        .main-inf > p{
+            text-align: left;
+            background-color: #EBF1F9;
+            width: 292px;
+            padding: 0  0.11rem;
+            font-weight: 600;
+            font-size: 10px;
+            padding-bottom: 2rem;
+            
+        }
+        
+        main > h2{
+            text-align: center;
+            margin-block: 4px;
+            font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 84px;
+        text-align: left;
+        margin-left: 2rem;
+        }
+    
+    
+        /* FOOTER */
+        .be-social-section a{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .be-social-section{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .s-handles > p{
+            display: contents;
+        }
+        img[src*='Leadly']{
+            width: 79px;
+            height: 22px;
+        }
+        .be-social-section img{
+            width: 30px;
+            height: 30px;
+        }
+    
+        .wbackground{
+            background-image: url(./Images/Desktop\ -\ 8\ \(1\).svg);
+            background-size: cover;
+            padding-block: 2rem;
+        }
+        
+        
+        
+        .cont{
+            width: 20rem;
+            margin: auto ;
+        }
+        
+        .cont p {
+            margin-top: 0.2rem;
+        font-size: 12px;
+        line-height: 33px;
+    
+        margin-bottom: 2rem;
+        }
+        
+        .cont h1{
+        font-size: 20px;
+        line-height: 44px;
+        width: 14rem;
+        margin-bottom: 1rem;
+        }
+        
+        .cont button{
+                padding: 0.35rem 0.35rem ;
+                font-size: 4px;
+               
+            }
+    
+            footer{
+                padding: 0.1rem 3rem;
+                display: block;
+                margin: 2rem auto;
+                width: 100%;
+                padding: auto;
+            }
+    
+            .inbox{
+                text-align: left;
+                position: relative;
+                top: 1.3rem;
+                width: 34px;
+                margin: 0.9rem  1.9rem;
+                margin-bottom: 0rem;
+            }
+    
+            .main-info > p{
+                background-color: #EBF1F9;
+                padding: 1.625rem;
+                padding-bottom: 1.5rem;
+                width: 600px;
+                font-weight: 600;
+                
+            }
+    }
